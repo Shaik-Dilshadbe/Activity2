@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="none" name="multiple(failed)">
+    <classes>
+      <class name="Actvity1.HomePage_MultiData">
+        <methods>
+          <include name="teardown"/>
+          <include name="basePageNavigation" invocation-numbers="0"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage_MultiData -->
+      <class name="Actvity1.HomePage">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage -->
+      <class name="Actvity1.HomePage_ValidateTitle">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage_ValidateTitle -->
+      <class name="Actvity1.HomePage_ValidateConatctNavigation">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage_ValidateConatctNavigation -->
+    </classes>
+  </test> <!-- multiple(failed) -->
+  <test parallel="none" name="homepage(failed)">
+    <classes>
+      <class name="Actvity1.HomePage_MultiData">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage_MultiData -->
+      <class name="Actvity1.HomePage">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage -->
+      <class name="Actvity1.HomePage_ValidateTitle">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage_ValidateTitle -->
+      <class name="Actvity1.HomePage_ValidateConatctNavigation">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage_ValidateConatctNavigation -->
+    </classes>
+  </test> <!-- homepage(failed) -->
+  <test parallel="none" name="validation(failed)">
+    <classes>
+      <class name="Actvity1.HomePage_MultiData">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage_MultiData -->
+      <class name="Actvity1.HomePage">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage -->
+      <class name="Actvity1.HomePage_ValidateTitle">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage_ValidateTitle -->
+      <class name="Actvity1.HomePage_ValidateConatctNavigation">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Actvity1.HomePage_ValidateConatctNavigation -->
+    </classes>
+  </test> <!-- validation(failed) -->
+</suite> <!-- Failed suite [Suite] -->

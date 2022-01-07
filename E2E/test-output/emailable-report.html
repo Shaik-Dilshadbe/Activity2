@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">title</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">10,173</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">multiple</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">22,995</td><td></td><td></td></tr><tr><td><a href="#t2">homepage</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">53,063</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t3">validation</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">14,035</td><td></td><td></td></tr><tr><th>Total</th><th class="num">2</th><th class="num attn">1</th><th class="num attn">2</th><th class="num">100,266</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">title &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Actvity1.HomePage_ValidateTitle</td><td><a href="#m0">basePageNavigation</a></td><td rowspan="1">1641321556990</td><td rowspan="1">33</td></tr></tbody><tbody id="t1"><tr><th colspan="4">multiple &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Actvity1.HomePage_MultiData</td><td><a href="#m1">basePageNavigation</a></td><td rowspan="1">1641321557973</td><td rowspan="1">17230</td></tr><tr><th colspan="4">multiple &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Actvity1.HomePage_MultiData</td><td><a href="#m2">basePageNavigation</a></td><td rowspan="1">1641321575210</td><td rowspan="1">4119</td></tr></tbody><tbody id="t2"><tr><th colspan="4">homepage &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Actvity1.HomePage</td><td><a href="#m3">teardown</a></td><td rowspan="1">1641321632985</td><td rowspan="1">0</td></tr><tr><th colspan="4">homepage &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Actvity1.HomePage</td><td><a href="#m4">basePageNavigation</a></td><td rowspan="1">1641321604041</td><td rowspan="1">28942</td></tr></tbody><tbody id="t3"><tr><th colspan="4">validation &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Actvity1.HomePage_ValidateConatctNavigation</td><td><a href="#m5">initialize</a></td><td rowspan="1">1641321633243</td><td rowspan="1">0</td></tr><tr><th colspan="4">validation &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">Actvity1.HomePage_ValidateConatctNavigation</td><td><a href="#m6">teardown</a></td><td rowspan="1">1641321647276</td><td rowspan="1">0</td></tr><tr><th colspan="4">validation &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Actvity1.HomePage_ValidateConatctNavigation</td><td><a href="#m7">basePageNavigation</a></td><td rowspan="1">1641321647272</td><td rowspan="1">2</td></tr></tbody></table><h2>title</h2><h3 id="m0">Actvity1.HomePage_ValidateTitle#basePageNavigation</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>multiple</h2><h3 id="m1">Actvity1.HomePage_MultiData#basePageNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>shaik@gmail.com</td><td>123</td><td>Restricted User</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1003, 16). Other element would receive the click: &lt;div class=&quot;listbuilder-popup-content&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;LAPTOP-S60HSV3C&apos;, ip: &apos;192.168.43.125&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9042901cb2af4d513d405312e8e2e28c, clickElement {id=0421ebe8-e4df-426f-aaca-758761062a95}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Dilsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59026/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9042901cb2af4d513d405312e8e2e28c)] -&gt; xpath: //*[@id=&quot;homepage&quot;]/header/div[1]/div/nav/ul/li[4]/a/span]
+Session ID: 9042901cb2af4d513d405312e8e2e28c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Actvity1.HomePage_MultiData.basePageNavigation(HomePage_MultiData.java:32)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">Actvity1.HomePage_MultiData#basePageNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>dilsha@gmail.com</td><td>345</td><td>Non Restricted User</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>homepage</h2><h3 id="m3">Actvity1.HomePage#teardown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;LAPTOP-S60HSV3C&apos;, ip: &apos;192.168.43.125&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a320e89bc549f4d61c6dfb5f0803e0f, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Dilsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59140}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59140/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a320e89bc549f4d61c6dfb5f0803e0f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:444)
+	at Actvity1.HomePage.teardown(HomePage.java:42)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">Actvity1.HomePage#basePageNavigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;LAPTOP-S60HSV3C&apos;, ip: &apos;192.168.43.125&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a320e89bc549f4d61c6dfb5f0803e0f, findElement {using=xpath, value=//*[@id=&quot;homepage&quot;]/header/div[1]/div/nav/ul/li[4]/a/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Dilsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59140}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59140/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a320e89bc549f4d61c6dfb5f0803e0f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at PageObject.LandingPage.getLogin(LandingPage.java:20)
+	at Actvity1.HomePage.basePageNavigation(HomePage.java:31)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>validation</h2><h3 id="m5">Actvity1.HomePage_ValidateConatctNavigation#initialize</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited normally.
+  (chrome not reachable)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;LAPTOP-S60HSV3C&apos;, ip: &apos;192.168.43.125&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)
+	at Resource.Base.initializeDriver(Base.java:26)
+	at Actvity1.HomePage_ValidateConatctNavigation.initialize(HomePage_ValidateConatctNavigation.java:18)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">Actvity1.HomePage_ValidateConatctNavigation#teardown</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">Actvity1.HomePage_ValidateConatctNavigation#basePageNavigation</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
